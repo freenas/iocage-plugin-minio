@@ -19,4 +19,4 @@ chown -R minio /var/db/minio && chmod u+rxw /var/db/minio
 service minio start 2>/dev/null
 
 echo "MINIO_ACCESS_KEY: $AKEY" > /root/PLUGIN_INFO
-echo "MINIO_SECRET_KEY: $SKEY" > /root/PLUGIN_INFO
+echo "MINIO_SECRET_KEY: $SKEY" >> /root/PLUGIN_INFO
