@@ -1,2 +1,2 @@
 # iocage-plugin-minio
-Artifact plugin for minio
+Artifact file(s) for Minio iocage plugin
