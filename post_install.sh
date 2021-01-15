@@ -2,8 +2,8 @@
 
 # Create some random keys
 export LC_ALL=C
-cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1 > /root/akey
-cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1 > /root/skey
+openssl rand -base64 64 | tr -dc 'a-zA-Z0-9' | cut -c -16 > /root/akey
+openssl rand -base64 64 | tr -dc 'a-zA-Z0-9' | cut -c -16 > /root/skey
 AKEY=$(cat /root/akey)
 SKEY=$(cat /root/skey)
 
