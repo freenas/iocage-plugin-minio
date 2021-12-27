@@ -9,6 +9,7 @@ SKEY=$(cat /root/skey)
 
 # Enable the service
 sysrc -f /etc/rc.conf minio_enable="YES"
+sysrc -f /etc/rc.conf minio_console_address=":9001"
 sysrc -f /etc/rc.conf minio_env="MINIO_ACCESS_KEY=$AKEY MINIO_SECRET_KEY=$SKEY"
 
 # Setup backend directory
